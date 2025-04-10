@@ -278,6 +278,74 @@ img {
   margin: 1rem 0;
 }
 
+/* Summary */
+.summary {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  padding: 4rem 2rem 5rem;
+}
+
+.summary .section-lists {
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.summary .list-header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.summary .list-item {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid #f1f4f6;
+}
+
+.summary .list-item:last-child {
+  border-bottom: none;
+}
+
+/* Info Section */
+.info-container {
+  background: url('../images/audience.jpg') top center/cover no-repeat;
+  display: flex;
+}
+
+.info-content {
+  background-color: var(--primary-color);
+  color: #fff;
+  flex: 1;
+  padding: 4rem;
+}
+
+.info-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.info-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.info-content ul li {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.info-content i {
+  margin-right: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.info-left {
+  width: 50%;
+}
+
 /* Media Queries */
 @media (max-width: 1200px) {
   .hero .hero-flex {
@@ -322,36 +390,6 @@ img {
   }
 }
 
-/* Summary */
-.summary {
-  background-color: var(--light-color);
-  color: var(--dark-color);
-  padding: 4rem 2rem 5rem;
-}
-
-.summary .section-lists {
-  background-color: #fff;
-  padding: 2rem;
-}
-
-.summary .list-header {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 0.5rem 1rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin: 1rem 0;
-}
-
-.summary .list-item {
-  padding: 1.4rem 0;
-  border-bottom: 1px solid #f1f4f6;
-}
-
-.summary .list-item:last-child {
-  border-bottom: none;
-}
-
 @media (max-width: 768px) {
   .main-menu-items {
     display: none;
@@ -364,6 +402,26 @@ img {
   .navbar .mobile-menu-toggle {
     display: block;
     padding: 10px;
+  }
+
+  .info-container {
+    flex-direction: column;
+  }
+
+  .info-content {
+    padding: 2rem;
+  }
+
+  .info-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .info-content p {
+    font-size: 1rem;
+  }
+
+  .info-left {
+    display: none;
   }
 }
 
